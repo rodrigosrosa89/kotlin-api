@@ -24,9 +24,9 @@ class AccountController(private val repository: AccountRepository) {
     fun updateById(@PathVariable id: Long, @RequestBody account: Account) : ResponseEntity<Account> =
         repository.findById(id).map {
             val accountToUpdate = it.copy(
-                name =  it.name,
-                document = it.document,
-                phone = it.phone
+                name =  account.name,
+                document = account.document,
+                phone = account.phone
             )
 
             ResponseEntity.ok(repository.save(accountToUpdate))
