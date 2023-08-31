@@ -1,57 +1,42 @@
-import com.rodao.bankapi.Diretor
-import com.rodao.bankapi.Funcionario
-import com.rodao.bankapi.Gerente
+import com.rodao.bankapi.*
 
 fun main() {
     println("Bem vindo ao seu banco!")
 
-    val rodrigo = Funcionario(
-        "Rodrigo",
-        "09999999913",
-        1000.00
+//    testaFuncionario()
+
+    val contaCorrente = ContaCorrente(
+        titular = "Marcelo Moreno",
+        numero = 9
     )
 
-    println("Nome ${rodrigo.nome}")
-    println("cpf ${rodrigo.cpf}")
-    println("Salário ${rodrigo.salario}")
-    println("Bonificação ${rodrigo.bonificacao()}")
-
-    val mandinha = Gerente(
-        "Amanda Rosa",
-        "00011100022",
-        2000.00,
-        1234
+    val contaPoupanca = ContaPoupanca(
+        titular = "Fábio",
+        numero = 1
     )
 
-    println("Nome ${mandinha.nome}")
-    println("cpf ${mandinha.cpf}")
-    println("Salário ${mandinha.salario}")
-    println("Bonificação ${mandinha.bonificacao()}")
+    contaCorrente.depositar(1000.00)
+    contaPoupanca.depositar(1000.0)
 
-    if (mandinha.autentica(1234)) {
-        println("Autenticada com sucesso!")
-    } else {
-        println("Erro na autenticação, senha inválida")
-    }
+    println("Saldo corrente: ${contaCorrente.saldo}")
+    println("Saldo poupança: ${contaPoupanca.saldo}")
 
-    val rafa = Diretor(
-        "Rafael Koh",
-        "33333333333",
-        5000.00,
-        12345,
-        200.00
-    )
+    contaCorrente.sacar(100.0)
+    contaPoupanca.sacar(100.0)
 
-    println("Nome ${rafa.nome}")
-    println("cpf ${rafa.cpf}")
-    println("Salário ${rafa.salario}")
-    println("Bonificação ${rafa.bonificacao()}")
-    println("PLR: ${rafa.plr}")
+    println("Saldo corrente após saque: ${contaCorrente.saldo}")
+    println("Saldo poupançaapós saque: ${contaPoupanca.saldo}")
 
-    if (rafa.autentica(12345)) {
-        println("Autenticada com sucesso!")
-    } else {
-        println("Erro na autenticação, senha inválida")
-    }
+    contaCorrente.transferir(100.0, contaPoupanca)
+
+    println("Saldo corrente após transferência: ${contaCorrente.saldo}")
+    println("Saldo poupançaapós transferência: ${contaPoupanca.saldo}")
+
+
+    contaPoupanca.transferir(100.0, contaCorrente)
+
+    println("Saldo corrente após 2transferência: ${contaCorrente.saldo}")
+    println("Saldo poupançaapós 2transferência: ${contaPoupanca.saldo}")
 
 }
+
