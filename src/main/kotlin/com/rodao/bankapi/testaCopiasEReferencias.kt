@@ -1,5 +1,8 @@
 package com.rodao.bankapi
 
+import com.rodao.bankapi.contas.ContaCorrente
+import com.rodao.bankapi.contas.ContaPoupanca
+
 class testaCopiasEReferencias {
 
     fun testaCopiasEReferencias() {
@@ -10,10 +13,10 @@ class testaCopiasEReferencias {
         println("numeroX $numeroX")
         println("numeroY $numeroY")
 
-//        val contaJoao = Conta("João", 10002)
-//        contaJoao.titular = "João"
-//        var contaMaria = Conta("Maria", 1003)
-//        contaMaria.titular = "Maria"
-//        contaJoao.titular = "João"
+        var contaJoao = ContaCorrente("João", 10002)
+        contaJoao.titular = "João"
+        var contaMaria = ContaPoupanca("Maria", 1003)
+        contaMaria.titular = "Maria"
+        contaJoao.titular = "João"
     }
 }

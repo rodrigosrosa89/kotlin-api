@@ -1,8 +1,8 @@
 import com.rodao.bankapi.*
 
-fun testaFuncionario() {
+fun testaFuncionarios() {
 
-    val rodrigo = Funcionario(
+    val rodrigo = Analista(
         "Rodrigo",
         "09999999913",
         1000.00

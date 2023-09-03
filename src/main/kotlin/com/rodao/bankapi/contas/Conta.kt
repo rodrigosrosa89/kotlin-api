@@ -1,9 +1,12 @@
-package com.rodao.bankapi
+package com.rodao.bankapi.contas
 
-open class Conta(titular: String, numero: Int) {
+abstract class Conta(
+    var titular: String,
+    var numero: Int
+) {
 
     var saldo = 0.0
-        private set
+        protected set
 
     fun depositar(valor: Double) {
         if (valor > 0) {
@@ -11,11 +14,7 @@ open class Conta(titular: String, numero: Int) {
         }
     }
 
-    open fun sacar(valor: Double) {
-        if (valor > 0) {
-            saldo -= valor
-        }
-    }
+    abstract fun sacar(valor: Double)
 
     fun transferir(valor: Double, conta: Conta) {
         if (this.saldo > valor) {
