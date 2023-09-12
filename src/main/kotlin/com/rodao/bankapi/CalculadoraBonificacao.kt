@@ -1,5 +1,7 @@
 package com.rodao.bankapi
 
+import com.rodao.bankapi.funcionarios.Funcionario
+
 class CalculadoraBonificacao {
 
     var total: Double = 0.0

@@ -1,4 +1,7 @@
 import com.rodao.bankapi.*
+import com.rodao.bankapi.funcionarios.Analista
+import com.rodao.bankapi.funcionarios.Diretor
+import com.rodao.bankapi.funcionarios.Gerente
 
 fun testaFuncionarios() {
 
