@@ -1,8 +1,9 @@
-import com.rodao.bankapi.Autenticavel
-import com.rodao.bankapi.SistemaInterno
-import com.rodao.bankapi.funcionarios.Cliente
-import com.rodao.bankapi.funcionarios.Diretor
-import com.rodao.bankapi.funcionarios.Gerente
+package com.rodao.bankapi.testes
+
+import com.rodao.bankapi.models.SistemaInterno
+import com.rodao.bankapi.models.funcionarios.Cliente
+import com.rodao.bankapi.models.funcionarios.Diretor
+import com.rodao.bankapi.models.funcionarios.Gerente
 
 fun testaAutenticacao() {
     val gerente = Gerente(

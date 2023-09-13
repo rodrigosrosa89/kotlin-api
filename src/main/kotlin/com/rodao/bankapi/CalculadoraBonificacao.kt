@@ -1,6 +1,6 @@
 package com.rodao.bankapi
 
-import com.rodao.bankapi.funcionarios.Funcionario
+import com.rodao.bankapi.models.funcionarios.Funcionario
 
 class CalculadoraBonificacao {
 

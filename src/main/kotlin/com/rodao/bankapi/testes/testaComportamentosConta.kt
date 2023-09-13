@@ -1,7 +1,7 @@
-package com.rodao.bankapi
+package com.rodao.bankapi.testes
 
-import com.rodao.bankapi.contas.ContaCorrente
-import com.rodao.bankapi.contas.ContaPoupanca
+import com.rodao.bankapi.models.contas.ContaCorrente
+import com.rodao.bankapi.models.contas.ContaPoupanca
 
 class testaComportamentosConta {
 

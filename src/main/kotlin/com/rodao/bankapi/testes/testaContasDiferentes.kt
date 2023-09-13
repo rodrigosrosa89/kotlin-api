@@ -1,5 +1,7 @@
-import com.rodao.bankapi.contas.ContaCorrente
-import com.rodao.bankapi.contas.ContaPoupanca
+package com.rodao.bankapi.testes
+
+import com.rodao.bankapi.models.contas.ContaCorrente
+import com.rodao.bankapi.models.contas.ContaPoupanca
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(

@@ -1,4 +1,4 @@
-package com.rodao.bankapi.contas
+package com.rodao.bankapi.models.contas
 
 abstract class Conta(
     var titular: String,

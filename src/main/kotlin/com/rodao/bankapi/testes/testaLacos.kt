@@ -1,3 +1,5 @@
+package com.rodao.bankapi.testes
+
 fun testaLacos() {
     var i = 0
     while (i < 5) {

@@ -1,3 +1,5 @@
+package com.rodao.bankapi.testes
+
 fun testaCondicoes(saldo: Double) {
     if (saldo > 0.0) {
         println("Conta positiva")

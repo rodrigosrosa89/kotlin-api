@@ -1,4 +1,4 @@
-package com.rodao.bankapi.funcionarios
+package com.rodao.bankapi.models.funcionarios
 
 abstract class Funcionario(
     val nome: String,

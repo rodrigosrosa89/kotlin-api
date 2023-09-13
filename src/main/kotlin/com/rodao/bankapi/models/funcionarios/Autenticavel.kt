@@ -1,4 +1,4 @@
-package com.rodao.bankapi
+package com.rodao.bankapi.models.funcionarios
 
 interface Autenticavel {
 

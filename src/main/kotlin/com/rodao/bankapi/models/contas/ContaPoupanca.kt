@@ -1,4 +1,4 @@
-package com.rodao.bankapi.contas
+package com.rodao.bankapi.models.contas
 
 class ContaPoupanca(titular: String, numero: Int) : Conta(titular = titular, numero = numero) {
 

@@ -1,7 +1,9 @@
+package com.rodao.bankapi.testes
+
 import com.rodao.bankapi.*
-import com.rodao.bankapi.funcionarios.Analista
-import com.rodao.bankapi.funcionarios.Diretor
-import com.rodao.bankapi.funcionarios.Gerente
+import com.rodao.bankapi.models.funcionarios.Analista
+import com.rodao.bankapi.models.funcionarios.Diretor
+import com.rodao.bankapi.models.funcionarios.Gerente
 
 fun testaFuncionarios() {
 

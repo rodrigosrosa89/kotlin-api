@@ -1,6 +1,6 @@
-package com.rodao.bankapi
+package com.rodao.bankapi.models
 
-import com.rodao.bankapi.funcionarios.Diretor
+import com.rodao.bankapi.models.funcionarios.Autenticavel
 
 class SistemaInterno {
 
@@ -10,9 +10,5 @@ class SistemaInterno {
         } else {
             println("Falha na autenticação")
         }
-    }
-
-    fun entrar(diretor: Diretor) {
-
     }
 }

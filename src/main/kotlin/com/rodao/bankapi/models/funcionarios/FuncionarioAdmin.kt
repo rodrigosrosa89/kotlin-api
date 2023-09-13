@@ -1,6 +1,4 @@
-package com.rodao.bankapi.funcionarios
-
-import com.rodao.bankapi.Autenticavel
+package com.rodao.bankapi.models.funcionarios
 
 abstract class FuncionarioAdmin(
     nome: String,
