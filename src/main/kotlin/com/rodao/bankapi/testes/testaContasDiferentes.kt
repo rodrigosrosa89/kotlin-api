@@ -2,15 +2,16 @@ package com.rodao.bankapi.testes
 
 import com.rodao.bankapi.models.contas.ContaCorrente
 import com.rodao.bankapi.models.contas.ContaPoupanca
+import com.rodao.bankapi.models.funcionarios.Cliente
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(
-        titular = "Marcelo Moreno",
+        titular = Cliente("Marcelo Moreno", cpf = "", senha = 1),
         numero = 9
     )
 
     val contaPoupanca = ContaPoupanca(
-        titular = "Fábio",
+        titular = Cliente("Fábio", "097112312322", senha = 2),
         numero = 1
     )
 

@@ -2,6 +2,7 @@ package com.rodao.bankapi.testes
 
 import com.rodao.bankapi.models.contas.ContaCorrente
 import com.rodao.bankapi.models.contas.ContaPoupanca
+import com.rodao.bankapi.models.funcionarios.Cliente
 
 class testaComportamentosConta {
 
@@ -13,10 +14,7 @@ class testaComportamentosConta {
         println("numeroX $numeroX")
         println("numeroY $numeroY")
 
-        val contaJoao = ContaCorrente("João", 10002)
-        contaJoao.titular = "João"
-        val contaMaria = ContaPoupanca("Maria", 1003)
-        contaMaria.titular = "Maria"
-        contaJoao.titular = "João"
+        val contaJoao = ContaCorrente(Cliente("João", "123", 123), 10002)
+        val contaMaria = ContaPoupanca(Cliente("Maria", "456", 456), 1003)
     }
 }

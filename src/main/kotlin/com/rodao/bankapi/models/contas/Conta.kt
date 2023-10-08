@@ -1,7 +1,9 @@
 package com.rodao.bankapi.models.contas
 
+import com.rodao.bankapi.models.funcionarios.Cliente
+
 abstract class Conta(
-    var titular: String,
+    var titular: Cliente,
     var numero: Int
 ) {
 

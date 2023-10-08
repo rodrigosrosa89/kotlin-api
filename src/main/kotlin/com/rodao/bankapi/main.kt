@@ -1,7 +1,7 @@
-import com.rodao.bankapi.testes.testaAutenticacao
+import com.rodao.bankapi.testes.testaContasDiferentes
 
 fun main() {
-    testaAutenticacao()
+    testaContasDiferentes()
 }
 
 

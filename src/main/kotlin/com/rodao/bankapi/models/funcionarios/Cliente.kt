@@ -1,7 +1,7 @@
 package com.rodao.bankapi.models.funcionarios
 
 class Cliente(
-    val nome: String,
+    var nome: String,
     val cpf: String,
     override val senha: Int,
 ) : Autenticavel {
