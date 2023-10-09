@@ -1,14 +1,22 @@
 package com.rodao.bankapi.testes
 
+import com.rodao.bankapi.models.Endereco
 import com.rodao.bankapi.models.contas.ContaCorrente
 import com.rodao.bankapi.models.contas.ContaPoupanca
 import com.rodao.bankapi.models.funcionarios.Cliente
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(
-        titular = Cliente("Marcelo Moreno", cpf = "", senha = 1),
+        titular = Cliente("Marcelo Moreno", cpf = "", senha = 1,
+        endereco = Endereco(logradouro = "Rua Fernando Esquerdo")
+        ),
         numero = 9
     )
+
+    println("titular")
+    println("nome do titular: ${contaCorrente.titular.nome}")
+    println("cpf do titular: ${contaCorrente.titular.cpf}")
+    println("endereço do titular: ${contaCorrente.titular.endereco.logradouro}")
 
     val contaPoupanca = ContaPoupanca(
         titular = Cliente("Fábio", "097112312322", senha = 2),

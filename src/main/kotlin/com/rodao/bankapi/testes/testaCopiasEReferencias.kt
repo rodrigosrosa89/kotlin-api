@@ -14,8 +14,8 @@ class testaCopiasEReferencias {
         println("numeroX $numeroX")
         println("numeroY $numeroY")
 
-        var contaJoao = ContaCorrente(Cliente("João", "123", 123), 10002)
+        var contaJoao = ContaCorrente(Cliente("João", "123", senha = 123), 10002)
         contaJoao.titular.nome = "Jones"
-        var contaMaria = ContaPoupanca(Cliente("Maria", "456", 123), 1003)
+        var contaMaria = ContaPoupanca(Cliente("Maria", "456", senha = 123), 1003)
     }
 }

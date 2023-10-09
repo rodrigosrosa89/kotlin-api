@@ -10,6 +10,16 @@ abstract class Conta(
     var saldo = 0.0
         protected set
 
+   companion object {
+        var totalContas = 0
+            private set
+    }
+
+    init {
+        println("Criando conta nova")
+        totalContas++
+    }
+
     fun depositar(valor: Double) {
         if (valor > 0) {
             saldo += valor
