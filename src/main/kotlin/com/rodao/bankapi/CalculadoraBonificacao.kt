@@ -11,12 +11,12 @@ class CalculadoraBonificacao {
         this.total += funcionario.bonificacao()
     }
 
-//    fun registra(gerente: Gerente) {
-//        this.total += gerente.bonificacao()
-//    }
-//
-//    fun registra(diretor: Diretor) {
-//        this.total += diretor.bonificacao()
+//Exemplo de ANY
+//    fun registra(funcionario: Any) {
+////        funcionario as Funcionario
+//        if (funcionario is Funcionario) {
+//            this.total += funcionario.bonificacao()
+//        }
 //    }
 
 
