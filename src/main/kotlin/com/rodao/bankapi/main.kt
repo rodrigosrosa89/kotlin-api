@@ -1,18 +1,10 @@
-import com.rodao.bankapi.models.Endereco
-
-
 fun main() {
-    println()
-
-    val endereco = Endereco(numero = 1000)
-    endereco.logradouro = "Rua xxx"
-    val enderecoNovo = Endereco(bairro = "Gutierrez", complemento = "Ap303")
-
-    println(endereco.equals(enderecoNovo))
-    println(endereco.hashCode())
-    println(enderecoNovo.hashCode())
-    println(endereco.toString())
-    println(enderecoNovo.toString())
+    try {
+        10/0
+    } catch (e: ArithmeticException) {
+        println("ArithmeticException foi pegada com sucesso!")
+        println(e)
+    }
 }
 
 
