@@ -14,7 +14,7 @@ class testaComportamentosConta {
         println("numeroX $numeroX")
         println("numeroY $numeroY")
 
-        val contaJoao = ContaCorrente(Cliente("João", "123", senha =123), 10002)
+        val contaJoao = ContaCorrente(Cliente("João", "123", senha = 123), 10002)
         val contaMaria = ContaPoupanca(Cliente("Maria", "456", senha = 456), 1003)
     }
 }

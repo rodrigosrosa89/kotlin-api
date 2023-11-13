@@ -6,8 +6,12 @@ class Cliente(
     var nome: String,
     val cpf: String,
     var endereco: Endereco = Endereco(),
-    override val senha: Int,
+    var senha: Int,
 ) : Autenticavel {
+
+    override fun autentica(senha: Int): Boolean {
+        return senha == this.senha
+    }
 
 
 }

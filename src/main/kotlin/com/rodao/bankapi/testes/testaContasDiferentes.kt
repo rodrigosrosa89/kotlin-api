@@ -7,8 +7,9 @@ import com.rodao.bankapi.models.funcionarios.Cliente
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(
-        titular = Cliente("Marcelo Moreno", cpf = "", senha = 1,
-        endereco = Endereco(logradouro = "Rua Fernando Esquerdo")
+        titular = Cliente(
+            "Marcelo Moreno", cpf = "", senha = 1,
+            endereco = Endereco(logradouro = "Rua Fernando Esquerdo")
         ),
         numero = 9
     )
@@ -35,13 +36,13 @@ fun testaContasDiferentes() {
     println("Saldo corrente após saque: ${contaCorrente.saldo}")
     println("Saldo poupança após saque: ${contaPoupanca.saldo}")
 
-    contaCorrente.transferir(100.0, contaPoupanca)
+    contaCorrente.transferir(100.0, contaPoupanca, 1234)
 
     println("Saldo corrente após transferência: ${contaCorrente.saldo}")
     println("Saldo poupançaapós transferência: ${contaPoupanca.saldo}")
 
 
-    contaPoupanca.transferir(100.0, contaCorrente)
+    contaPoupanca.transferir(100.0, contaCorrente, 5678)
 
     println("Saldo corrente após 2transferência: ${contaCorrente.saldo}")
     println("Saldo poupançaapós 2transferência: ${contaPoupanca.saldo}")
