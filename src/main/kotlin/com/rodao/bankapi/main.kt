@@ -1,10 +1,13 @@
+import com.rodao.bankapi.testes.testaIdades
+import com.rodao.bankapi.testes.testaIdades2
+import com.rodao.bankapi.testes.testaIdadesMenor
+import com.rodao.bankapi.testes.testaSalarios
+
 fun main() {
-    try {
-        10/0
-    } catch (e: ArithmeticException) {
-        println("ArithmeticException foi pegada com sucesso!")
-        println(e)
-    }
+    testaIdades()
+    testaIdades2()
+    testaIdadesMenor()
+    testaSalarios()
 }
 
 
