@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rodao</groupId>
-	<artifactId>bank-api</artifactId>
+	<artifactId>kotlin-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bank-api</name>
 	<description>Bank WebApi</description>
